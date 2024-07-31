@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Bruno+Ace+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+}
+header{
+    color:black;
+    margin: .7vw 2vw;
+    background-color: rgb(235, 233, 233);
+    filter: drop-shadow(0 0 3px gray);
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .nav-logo{
+    font-size: 1vw;
+    padding:  2vw;
+}
+header .nav-logo span{
+    color: red;
+}
+header .nav-menu{
+    display: flex;
+    align-items: center;
+}
+header .nav-menu li{
+    list-style: none;
+
+}
+.navbar .toggle{
+    display: none;
+}
+.navbar label{
+    font-size: 1.3vw;
+    padding-right: 1vw;
+}
+header .nav-menu ul{
+    display: flex;
+    gap: 1.5vw;
+    font-size: 1.2vw;
+}
+
+.navbar label i {
+    display: none;
+}
+header .nav-search{
+    margin-right: 1vw;
+    font-size: 1.3vw;
+}
+header .navbar .toggle{
+    display: none;
+}
+header .nav-menu a{
+    text-decoration: none;
+    color: black;
+}
+header .nav-search input{
+    font-size: 1.2vw;
+    padding: .3vw .7vw;
+    background: transparent;
+    border: 2px solid lightgrey;
+}
+header .nav-search button{
+    font-size: 1vw;
+    padding: .4vw .4vw;
+    color: black;
+    border: 2px solid lightgrey;
+    cursor: pointer;
+}
+main .product .image img{
+    height: 300px;
+
+}
+main .section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+main .product{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    font-size: 2vw;
+    font-weight: 700;
+    padding: 2vw 1vw;
+    line-height: 40px;
+    margin: 40px 0;
+    filter: drop-shadow(0 0 3px gray);
+
+}
+main .product .title{
+    font-size: 2.3vw;
+}
+main .product .cost{
+    font-size: 1.4vw;
+}
+main .product .for-more button{
+    font-size: 1.5vw;
+    background-color: aquamarine;
+    border: none;
+    border-radius: 8px;
+    padding: .5vw 1vw;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-text p{
+    font-size: large;
+    padding: 1vw;
+}
+@media (max-width:600px) {
+    .navbar .nav-search .list{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    #toggle:checked ~ .list{
+        display: flex;
+    }
+}
