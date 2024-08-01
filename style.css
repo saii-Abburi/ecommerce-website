@@ -13,6 +13,9 @@ header{
 .navbar{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+.navbar .nav-menu .list{
     align-items: center;
 }
 header .nav-logo{
@@ -25,34 +28,28 @@ header .nav-logo span{
 header .nav-menu{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 header .nav-menu li{
     list-style: none;
 
 }
-.navbar .toggle{
+.navbar #toggle , .navbar .toggle-label{
     display: none;
 }
-.navbar label{
+.navbar .toggle-label{
     font-size: 1.3vw;
-    padding-right: 1vw;
 }
 header .nav-menu ul{
     display: flex;
-    gap: 1.5vw;
+    gap: 20px;
     font-size: 1.2vw;
 }
-
-.navbar label i {
-    display: none;
-}
 header .nav-search{
-    margin-right: 1vw;
+    margin: 2vw 1.2vw;
     font-size: 1.3vw;
 }
-header .navbar .toggle{
-    display: none;
-}
+
 header .nav-menu a{
     text-decoration: none;
     color: black;
@@ -117,14 +114,24 @@ footer .footer-text p{
     font-size: large;
     padding: 1vw;
 }
+
 @media (max-width:600px) {
-    .navbar .nav-search .list{
+    .nav-menu .list{
         width: 100%;
         flex-direction: column;
+        padding:40px;
         align-items: center;
         display: none;
+
     }
-    #toggle:checked ~ .list{
+    #toggle:checked ~ .nav-menu .list{
         display: flex;
+        font-size:small;
     }
+    .navbar .toggle-label{
+        display: block;
+        font-size: 16px;
+    }
+
+
 }
