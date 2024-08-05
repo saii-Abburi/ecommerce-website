@@ -67,6 +67,9 @@ header .nav-search button{
     border: 2px solid lightgrey;
     cursor: pointer;
 }
+.nav-menu .list li:hover{
+    transform: translateY(-2px);
+}
 main .product .image img{
     height: 300px;
 
@@ -104,6 +107,9 @@ main .product .for-more button{
     padding: .5vw 1vw;
     cursor: pointer;
 }
+main .product:hover{
+    transform: translateY(-15px);
+}
 footer{
     background-color: black;
     color: white;
@@ -120,9 +126,16 @@ footer .footer-text p{
         width: 100%;
         flex-direction: column;
         padding:40px;
+        margin-top: 30px;
         align-items: center;
         display: none;
 
+    }
+    .toggle-label i{
+        flex-wrap: wrap;
+    }
+    .nav-menu .list ul li{
+        flex-wrap: wrap;
     }
     #toggle:checked ~ .nav-menu .list{
         display: flex;
